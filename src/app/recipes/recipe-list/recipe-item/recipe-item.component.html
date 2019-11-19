@@ -1,0 +1,12 @@
+<a class="list-group-item clearfix" 
+routerLinkActive="active"
+[routerLink]="[index]"
+style="cursor: pointer; margin-bottom: 10px">
+    <div class="pull-left">
+        <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+        <div class="list-group-item-description">{{ recipe.description }}</div>
+    </div>
+    <span class="pull-right">
+        <img src="{{ recipe.imagePath }}" alt="{{ recipe.name }} image" class="img-responsive" style="max-height: 50px;">
+    </span>
+</a>
